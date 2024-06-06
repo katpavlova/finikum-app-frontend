@@ -1,0 +1,50 @@
+:root{
+    --primary-text-dark: #161616;
+    --primary-text-light: #ffffff;
+    --primary-blue: #1E50FE;
+    --primary-light-blue: #C3E0EE;
+    --secondary-light: #F8F8F6;
+    --secondary-yellow: #FEEB9D;
+    --secondary-green: #17BD7F;
+    --secondary-red: #FF1083;
+}
+
+body{
+    font-family: Manrope;
+}
+
+.container{
+    margin: 0 auto;
+    width: 1625px;
+    display: flex;
+    justify-content: center;
+}
+
+@media (min-width: 1280px) and (max-width: 1624px) {
+    .container{
+        margin: 0 auto;
+        width: 1180px;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1279px) {
+    .container{
+        margin: 0 auto;
+        width: 1000px;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+
+@media (max-width: 1023px) {
+    .container{
+        margin: 0 auto;
+        width: 93vw;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+}
