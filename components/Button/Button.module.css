@@ -1,5 +1,6 @@
 .button{
-    display: inline-block;
+    display: block;
+    white-space: nowrap;
     box-sizing: border-box;
     padding: 16px 55px;
     justify-content: center;
@@ -33,7 +34,7 @@
 
 @media (min-width: 1280px) and (max-width: 1727px) {
     .button{
-        display: inline-block;
+        display: block;
         box-sizing: border-box;
         padding: 12px 30px;
         justify-content: center;
@@ -50,7 +51,7 @@
 
 @media (min-width: 1024px) and (max-width: 1279px) {
     .button{
-        display: inline-block;
+        display: block;
         box-sizing: border-box;
         padding: 12px 30px;
         justify-content: center;
@@ -67,7 +68,7 @@
 
 @media (max-width: 1023px) {
     .button{
-        display: inline-block;
+        display: block;
         box-sizing:content-box;
         padding: 12px 30px;
         justify-content: center;

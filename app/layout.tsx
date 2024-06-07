@@ -1,9 +1,13 @@
 import type { Metadata } from "next";
 import { Manrope } from "next/font/google";
+import { Unbounded } from "next/font/google";
 import "../styles/global.css";
+import cn from 'classnames';
 
 
-const inter = Manrope({ subsets: ["cyrillic"] });
+
+const manrope = Manrope({ subsets: ["cyrillic"] });
+const unbouded = Unbounded({subsets: ["cyrillic"] });
 
 
 
@@ -23,7 +27,10 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang="en">
-			<body className={inter.className}>{children}</body>
+			<body className={cn(manrope.className)}>
+				
+				{children}
+			</body>
 		</html>
 	);
 }

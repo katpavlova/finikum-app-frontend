@@ -1,18 +1,18 @@
-import styles from "./page.module.css";
-import { Htag } from "@/components/Htag/Htag";
-import { Button } from "@/components/Button/Button";
+'use client';
+
 import { Header } from "@/components/Header/Header";
-import { useRef } from "react";
+import styles from "./page.module.css";
+import HomePage from "./(home)/HomePage";
+import { MenuItem } from "@/components/MenuList/MenuItem";
+import { MenuList } from "@/components/MenuList/MenuList";
 
 export default function Home() {
 	return (
 		<main className={styles.main}>
 			<Header/>
-			<div className="container">
-				<Htag tag='h1' style="h1_dark">Привет</Htag>
-				<Button appearance="primary">Привет</Button>
-				<Button appearance="secondary">Привет</Button>
-			</div>
+			<HomePage/>
+			<MenuList/>
+			
 
 		</main>
 	);

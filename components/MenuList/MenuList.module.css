@@ -1,0 +1,122 @@
+.MenuItem{
+    gap: 20px;
+    width: 27%;
+    height: 200px;
+    padding: 42px;
+    background-color: var(--primary-blue);
+    overflow: hidden;
+    border-radius: 30px;
+    border: none;
+}
+
+.MenuItem_img {
+    /* width: 240px;
+    height: 180px; */
+    margin-left: 45%;
+    object-fit: cover;
+}
+.MenuItem_light {
+    gap: 20px;
+    width: 27%;
+    height: 200px;
+    padding: 42px;
+    background-color: var(--primary-text-light);
+    overflow: hidden;
+    border-radius: 30px;
+    border: none;
+}
+
+.MenuList{
+    margin-top: 80px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+@media (min-width: 1280px) and (max-width: 1624px) {
+    .MenuItem{
+        gap: 20px;
+        width: 27%;
+        height: 200px;
+        padding: 42px;
+        border-radius: 25px;
+    }
+
+    .MenuItem_light {
+        gap: 20px;
+        width: 27%;
+        height: 200px;
+        padding: 42px;
+        border-radius: 25px;
+    }
+    .MenuList{
+        margin-top: 80px;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1279px) {
+    .MenuItem{
+        gap: 20px;
+        width: 27%;
+        height: 200px;
+        padding: 42px;
+        border-radius: 20px;
+    }
+
+    .MenuItem_light {
+        gap: 20px;
+        width: 27%;
+        height: 200px;
+        padding: 42px;
+        border-radius: 20px;
+    }
+    .MenuList{
+        margin-top: 48px;
+    }
+}
+
+
+@media (max-width: 1023px) {
+    .MenuItem{
+        gap: 20px;
+        width: 100%;
+        height: 200px;
+        padding: 42px;
+        border-radius: 15px;
+    }
+
+    .MenuItem_light {
+        gap: 20px;
+        width: 100%;
+        height: 200px;
+        padding: 42px;
+        border-radius: 15px;
+    }
+    .MenuList{
+        margin-top: 48px;
+    }
+}
+
+
+@media (max-width: 800px) {
+    .MenuItem{
+        gap: 20px;
+        width: 100%;
+        height: 200px;
+        padding: 42px;
+        border-radius: 15px;
+    }
+
+    .MenuItem_light {
+        gap: 20px;
+        width: 100%;
+        height: 200px;
+        padding: 42px;
+        border-radius: 15px;
+    }
+    .MenuList{
+        margin-top: 36px;
+    }
+}
