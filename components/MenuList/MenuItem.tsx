@@ -31,7 +31,7 @@ export const MenuItem = ({children, imgname}: MenuItemProps): JSX.Element => {
 			onMouseEnter={handleMouseEnter}
 			onMouseLeave={handleMouseLeave}
 			onClick={handleClick}>
-			<h3 className={cn('h3_light', { 'h3_dark': isLight })}>
+			<h3 className={cn('h3_light',  {'h3_dark': isLight} )}>
 				{children}
 			</h3>
 			<Image src={`/img/home/Menu/${imgname}.png`} className={cn(styles.MenuItem_img)} alt={imgname} width={240} height={180}/>
