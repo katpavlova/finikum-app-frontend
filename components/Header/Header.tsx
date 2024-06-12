@@ -36,7 +36,7 @@ export const Header = (): JSX.Element => {
                     </div>
 				}
 				{ (width <= 1280) && (width > 800) && <HeaderMenu/> }
-				{ (width <= 600) && <HeaderMobile/> }
+				{ (width <= 800) && <HeaderMobile/> }
 			</div>
 		</div>
 	</>);

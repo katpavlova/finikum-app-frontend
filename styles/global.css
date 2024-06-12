@@ -70,7 +70,7 @@ body{
 }
 .h3_dark{
     color: var(--primary-text-dark);
-    font-size: 36px;
+    font-size: 32px;
     font-weight: 500;
     line-height: 100%;
     letter-spacing: 0%;
@@ -78,7 +78,7 @@ body{
 }
 .h3_light{
     color: var(--primary-text-light);
-    font-size: 36px;
+    font-size: 32px;
     font-weight: 500;
     line-height: 100%;
     letter-spacing: 0%;
@@ -86,7 +86,7 @@ body{
 }
 .h4_dark{
     color: var(--primary-text-dark);
-    font-size: 32px;
+    font-size: 28px;
     font-weight: 500;
     line-height: 130%;
     letter-spacing: 0%;
@@ -94,7 +94,7 @@ body{
 }
 .h4_light{
     color: var(--primary-text-light);
-    font-size: 32px;
+    font-size: 28px;
     font-weight: 500;
     line-height: 130%;
     letter-spacing: 0%;
@@ -137,12 +137,12 @@ body{
         line-height: 100%;
     }
     .h3_dark{
-        font-size: 32px;
+        font-size: 30px;
         font-weight: 500;
         line-height: 100%;
     }
     .h3_light{
-        font-size: 32px;
+        font-size: 30px;
         font-weight: 500;
         line-height: 100%;
     }
@@ -192,12 +192,12 @@ body{
         line-height: 100%;
     }
     .h3_dark{
-        font-size: 28px;
+        font-size: 26px;
         font-weight: 500;
         line-height: 100%;
     }
     .h3_light{
-        font-size: 28px;
+        font-size: 26px;
         font-weight: 500;
         line-height: 100%;
     }
@@ -210,6 +210,10 @@ body{
         font-size: 24px;
         font-weight: 500;
         line-height: 130%;
+    }
+
+    body{
+        gap: 64px;
     }
 }
 
@@ -270,6 +274,29 @@ body{
 }
 
 
+@media (min-width: 1280px) and (max-width: 1624px) {
+    body{
+        gap: 64px;
+    }
+    
+}
+
+@media (min-width: 1024px) and (max-width: 1279px) {
+    body{
+        gap: 48px;
+    }
+    
+}
+
+
+@media (max-width: 1023px) {
+    body{
+        gap: 48px;
+    }
+}
+
+
+
 @media (max-width: 800px) {
     .container{
         margin: 0 auto;
@@ -282,5 +309,8 @@ body{
     .border-radius{
         border-radius: 15px;
 
+    }
+    body{
+        gap: 36px;
     }
 }

@@ -4,6 +4,9 @@
     flex-direction: column;
     background-color: var(--primary-text-light);
     position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10; 
 }
 
 .header_logo, .header_menu__link {
@@ -22,13 +25,14 @@
     flex-direction: row;
     gap: 20px;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 .header_wrapper{
     padding: 15px 0px;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     gap: 20px;
     align-items: center;
 }
@@ -104,9 +108,21 @@
         flex-direction: row;
         align-items: center;
         justify-content: center;
+
     }
     .button_menu{
         position: absolute;
         right: 15px; 
+    }
+    .header__mobile{
+        width: 100%;
+        background-color: var(--primary-text-light);
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 10; 
+    }
+    .header_wrapper_second{
+        justify-content: center;
     }
 }

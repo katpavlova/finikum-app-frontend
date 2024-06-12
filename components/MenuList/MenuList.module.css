@@ -25,9 +25,12 @@
     border-radius: 30px;
     border: none;
 }
+.text_dark{
+        color: var(--primary-text-dark);
+    }
+
 
 .MenuList{
-    margin-top: 80px;
     display: flex;
     width: 100%;
     justify-content: space-between;
@@ -51,16 +54,14 @@
         padding: 42px;
         border-radius: 25px;
     }
-    .MenuList{
-        margin-top: 56px;
-    }
+
 }
 
 @media (min-width: 1024px) and (max-width: 1279px) {
     .MenuItem{
         gap: 16px;
         width: 25%;
-        height: 200px;
+        height: 165px;
         padding: 32px;
         border-radius: 20px;
     }
@@ -68,13 +69,11 @@
     .MenuItem_light {
         gap: 16px;
         width: 25%;
-        height: 200px;
+        height: 165px;
         padding: 32px;
         border-radius: 20px;
     }
-    .MenuList{
-        margin-top: 36px;
-    }
+
 
     .MenuItem_img {
         margin-left: 30%;
@@ -100,9 +99,7 @@
         padding: 32px;
         border-radius: 15px;
     }
-    .MenuList{
-        margin-top: 36px;
-    }
+
 
     .MenuItem_img {
         margin-left: 60%;
@@ -128,13 +125,10 @@
         padding: 24px;
         border-radius: 15px;
     }
-    .MenuList{
-        margin-top: 36px;
-    }
 
     .MenuItem_img {
         margin-left: 45%;
         object-fit: cover;
-        width: 50% !important;
+        width: 45% !important;
     }
 }
