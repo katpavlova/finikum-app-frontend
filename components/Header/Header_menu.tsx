@@ -21,14 +21,16 @@ export const HeaderMenu = (): JSX.Element => {
 		<div className={styles.header}>
 			<div className="container">
 				<div className={styles.header_wrapper}>
-					<div className={styles.header_logo}>
-						<Image src="/icons/logo.svg" alt="logo" width={45} height={45}/>
-						<span className={styles.header_logo__text}>Региональный центр финансовой грамотности Ростовской области</span>
+					<div>
+						<Link href={'/home'} className={styles.header_logo}>
+							<Image src="/icons/logo.svg" alt="logo" width={45} height={45}/>
+							<span className={styles.header_logo__text}>Региональный центр финансовой грамотности Ростовской области</span>
+						</Link>
 					</div>
 
 					<div className={styles.header_menu}>
-						<a className={styles.header_menu__link}>О центре</a>
-						<a className={styles.header_menu__link}>Учебные материалы</a>
+						<Link href='/education' className={styles.header_menu__link}>О центре</Link>
+						<Link href='/education' className={styles.header_menu__link}>Учебные материалы</Link>
 						<Image src="/icons/menu.svg" alt="logo" width={24} height={24} onClick={changeMenuState}/>
 
 						<Button appearance="primary">Личный кабинет</Button>

@@ -14,9 +14,9 @@ export const HeaderSecondMenu = (): JSX.Element => {
 			<div className="container">
 				<div className={styles.header_wrapper_second}>
 					<div className={styles.header_menu}>
-						<a className={styles.header_menu__link}>Цифровые финансовые услуги</a>
-						<a className={styles.header_menu__link}>Мероприятия</a>
-						<a className={styles.header_menu__link}>Новости</a>
+						<Link href='/education' className={styles.header_menu__link}>Цифровые финансовые услуги</Link>
+						<Link href='/education' className={styles.header_menu__link}>Мероприятия</Link>
+						<Link href='/education' className={styles.header_menu__link}>Новости</Link>
 						
 					</div>
 				</div>

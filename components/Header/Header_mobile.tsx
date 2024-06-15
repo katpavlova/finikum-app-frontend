@@ -22,9 +22,11 @@ export const HeaderMobile = (): JSX.Element => {
 		<div className={styles.header__mobile}>
 			<div className="container">
 				<div className={styles.header_wrapper__mobile}>
-					<div className={styles.header_logo}>
-						<Image src="/icons/logo.svg" alt="logo" width={45} height={45}/>
-						<span className={styles.header_logo__text}>Региональный центр финансовой грамотности Ростовской области</span>
+					<div>
+						<Link href={'/home'}className={styles.header_logo}>
+							<Image src="/icons/logo.svg" alt="logo" width={45} height={45}/>
+							<span className={styles.header_logo__text}>Региональный центр финансовой грамотности Ростовской области</span>
+						</Link>
 					</div>
 					<Image src="/icons/menu.svg" alt="menu" className={styles.button_menu} width={24} height={24} onClick={changeMenuState}/>
 				</div>
