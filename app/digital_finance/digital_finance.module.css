@@ -40,7 +40,7 @@
 }
 
 .photo1{
-    background-image: url('/img/education/finikum_wb.png') ;
+    background-image: url('/img/digital_finance/pay_desk.png');
     width: 520px;
     height: 200px;
     border-radius: 30px;
@@ -347,6 +347,8 @@
     }
     
     .photo1{
+        background-image: url('/img/digital_finance/pay.png') no-repeat;
+        background-size: 100%;
         width: 55%;
         height: 160px;
         border-radius: 15px;
@@ -460,6 +462,8 @@
     }
     
     .photo1{
+        background-image: url('/img/digital_finance/pay.png') no-repeat;
+        background-size: cover;
         width: 55%;
         height: 160px;
         border-radius: 15px;
