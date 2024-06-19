@@ -4,6 +4,7 @@ import styles from './education.module.css';
 import Image from 'next/image';
 import { Header } from '@/components/Header/Header';
 import { Footer } from '@/components/Footer/Footer';
+import Link from 'next/link';
 
 
 export default function Education() {
@@ -36,31 +37,39 @@ export default function Education() {
 				Учебные разделы
 			</h3>
 			<div className={styles.education_chapters}>
-				<div className={styles.education_chapter1}>
-					<Image src="/img/education/metod_ages.png" alt="logo" width={500} height={580}/>
-					<div className={styles.theme1}>
-						<h4 className='h4_light'>
+				<Link href='education/lessons/1' className={styles.link}>
+					<div className={styles.education_chapter1}>
+						<Image src="/img/education/metod_ages.png" alt="logo" width={500} height={580}/>
+						<div className={styles.theme1}>
+							<h4 className='h4_light'>
 						Методические разработки 
-						</h4>
-						<p>для разных возрастных групп</p>
+							</h4>
+							<p>для разных возрастных групп</p>
+						</div>
+					</div>
+				</Link>
+				<div className={styles.education_chapter2} >
+					<div className={styles.theme2}>
+						<Link href='education/lessons/2' className={styles.link}>
+							<h4 className='h4_dark'>Обучающие курсы</h4>
+						</Link>		
+					</div>
+					<div className={styles.theme2}>
+						<Link href='education/lessons/3' className={styles.link}>
+							<h4 className='h4_dark'>Уроки финансовой грамотности </h4>
+						</Link>
 					</div>
 				</div>
-				<div className={styles.education_chapter2}>
-					<div className={styles.theme2}>
-						<h4 className='h4_dark'>Обучающие курсы</h4>
-					</div>
-					<div className={styles.theme2}>
-						<h4 className='h4_dark'>Уроки финансовой грамотности </h4>
-					</div>
-				</div>
-				<div className={styles.education_chapter1}>
-					<Image src="/img/education/games.png" alt="logo" width={500} height={580}/>
-					<div className={styles.theme1}>
-						<h4 className='h4_light'>
+				<Link href='https://fin-kompas.rsue.ru/' className={styles.link} target='_blank'>
+					<div className={styles.education_chapter1}>
+						<Image src="/img/education/games.png" alt="logo" width={500} height={580}/>
+						<div className={styles.theme1}>
+							<h4 className='h4_light'>
 						Игры по финансовой грамотности
-						</h4>
+							</h4>
+						</div>
 					</div>
-				</div>
+				</Link>
 			</div>
 		</div>
 

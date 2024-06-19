@@ -2,6 +2,7 @@
     --primary-text-dark: #161616;
     --primary-text-light: #ffffff;
     --primary-blue: #1E50FE;
+    --primary-sky: #3980AA;
     --primary-light-blue: #C3E0EE;
     --secondary-light: #F8F8F6;
     --secondary-yellow: #FEEB9D;
@@ -29,8 +30,8 @@ a{
 
 .container{
     margin: 0 auto;
-    max-width: 1625px;
-    width: 1625px;
+    max-width: 1400px;
+    width: 1400px;
     display: flex;
     justify-content: center;
     
@@ -93,7 +94,7 @@ a{
     color: var(--primary-text-dark);
     font-size: 28px;
     font-weight: 500;
-    line-height: 130%;
+    line-height: 110%;
     letter-spacing: 0%;
     text-align: left;
 }
@@ -101,7 +102,7 @@ a{
     color: var(--primary-text-light);
     font-size: 28px;
     font-weight: 500;
-    line-height: 130%;
+    line-height: 110%;
     letter-spacing: 0%;
     text-align: left;
 }
@@ -154,12 +155,12 @@ a{
     .h4_dark{
         font-size: 28px;
         font-weight: 500;
-        line-height: 130%;
+        line-height: 110%;
     }
     .h4_light{
         font-size: 28px;
         font-weight: 500;
-        line-height: 130%;
+        line-height: 110%;
     }
 }
 
@@ -209,12 +210,12 @@ a{
     .h4_dark{
         font-size: 24px;
         font-weight: 500;
-        line-height: 130%;
+        line-height: 110%;
     }
     .h4_light{
         font-size: 24px;
         font-weight: 500;
-        line-height: 130%;
+        line-height: 110%;
     }
 
     body{
@@ -269,12 +270,12 @@ a{
     .h4_dark{
         font-size: 20px;
         font-weight: 500;
-        line-height: 130%;
+        line-height: 110%;
     }
     .h4_light{
         font-size: 20px;
         font-weight: 500;
-        line-height: 130%;
+        line-height: 110%;
     }
 }
 

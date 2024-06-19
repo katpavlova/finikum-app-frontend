@@ -4,6 +4,7 @@ import styles from './digital_finance.module.css';
 import Image from 'next/image';
 import { Header } from '@/components/Header/Header';
 import { Footer } from '@/components/Footer/Footer';
+import Link from 'next/link';
 
 
 export default function Education() {
@@ -36,29 +37,37 @@ export default function Education() {
 				Учебные разделы
 			</h3>
 			<div className={styles.education_chapters}>
-				<div className={styles.education_chapter1}>
-					<Image src="/img/digital_finance/theme1.png" alt="logo" width={500} height={580}/>
-					<div className={styles.theme1}>
-						<h4 className='h4_light'>
+				<Link href='education/lessons/1' className={styles.link}>
+					<div className={styles.education_chapter1}>
+						<Image src="/img/digital_finance/theme1.png" alt="logo" width={500} height={580}/>
+						<div className={styles.theme1}>
+							<h4 className='h4_light'>
 						Мобильный банк 
-						</h4>
+							</h4>
+						</div>
 					</div>
-				</div>
+				</Link>
 				<div className={styles.education_chapter2}>
-					<div className={styles.theme2}>
-						<h4 className='h4_dark'>Интернет-банк</h4>
-					</div>
-					<div className={styles.theme2}>
-						<h4 className='h4_dark'>Онлайн кредитование</h4>
-					</div>
+					<Link href='education/lessons/2' className={styles.link}>
+						<div className={styles.theme2}>
+							<h4 className='h4_dark'>Интернет-банк</h4>
+						</div>
+					</Link>
+					<Link href='education/lessons/3' className={styles.link}>
+						<div className={styles.theme2}>
+							<h4 className='h4_dark'>Онлайн кредитование</h4>
+						</div>
+					</Link>
 				</div>
 				<div className={styles.education_chapter1}>
-					<Image src="/img/digital_finance/theme4.png" alt="logo" width={500} height={580}/>
-					<div className={styles.theme1}>
-						<h4 className='h4_light'>
+					<Link href='education/lessons/3' className={styles.link}>
+						<Image src="/img/digital_finance/theme4.png" alt="logo" width={500} height={580}/>
+						<div className={styles.theme1}>
+							<h4 className={cn('h4_light', 'theme1__h4_light')}>
 						Банкоматы, платёжные банковские и небанковские терминалы
-						</h4>
-					</div>
+							</h4>
+						</div>
+					</Link>
 				</div>
 			</div>
 		</div>

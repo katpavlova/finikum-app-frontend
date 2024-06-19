@@ -1,0 +1,139 @@
+.SideBarItem{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    min-height: 82px;
+    border-radius: 30px;
+    border: none;
+    box-sizing: border-box;
+    padding: 8px 36px;
+    background-color: var(--primary-text-light);
+}
+
+.SideBarItem p{
+    color: var(--primary-text-dark);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 100%;
+    text-align: left;
+    width: 285px
+}
+
+.SideBarItem:hover{
+    background-color: var(--primary-light-blue);
+}
+
+.SideBarItem_active{
+    background-color: var(--primary-light-blue);
+}
+
+.SideBarList{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 520px;
+}
+
+
+@media (min-width: 1280px) and (max-width: 1624px) {
+    .SideBarItem{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        min-height: 72px;
+        border-radius: 25px;
+        border: none;
+        box-sizing: border-box;
+        padding: 8px 32px;
+        background-color: var(--primary-text-light);
+    }
+    
+    .SideBarItem p{
+        color: var(--primary-text-dark);
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 100%;
+        text-align: left;
+        width: 80%;
+    }
+    
+    
+    .SideBarList{
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        width: 45%;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1279px) {
+
+    .SideBarItem{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        min-height: 64px;
+        border-radius: 20px;
+        border: none;
+        box-sizing: border-box;
+        padding: 8px 24px;
+        background-color: var(--primary-text-light);
+    }
+    
+    .SideBarItem p{
+        color: var(--primary-text-dark);
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 100%;
+        text-align: left;
+        width: 80%;
+    }
+    
+    .SideBarList{
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        width: 45%;
+    }
+}
+
+
+@media (max-width: 1023px) {
+    .SideBarItem{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        min-height: 48px;
+        border-radius: 20px;
+        border: none;
+        box-sizing: border-box;
+        padding: 8px 16px;
+        background-color: var(--primary-text-light);
+    }
+    
+    .SideBarItem p{
+        color: var(--primary-text-dark);
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 100%;
+        text-align: left;
+        width: 80%;
+    }
+    
+    .SideBarList{
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        width: 100%;
+    }
+}
+
+
+
+@media (max-width: 800px) {
+   
+}

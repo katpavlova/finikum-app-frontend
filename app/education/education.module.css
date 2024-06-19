@@ -9,12 +9,16 @@
     flex-direction: column;
     gap: 30px;
     /* flex: 1; */
-    width: 796px;
+    width: 685px;
+}
+
+.link{
+    display:block;
 }
 
 .education_about_second {
     /* flex: 1;*/
-    width: 796px; 
+    width: 685px; 
     display: flex;
     flex-direction: column;
     /* position: relative; */
@@ -28,7 +32,7 @@
     box-sizing: border-box;
     padding: 56px;
     background-color: var(--primary-blue);
-    width: 796px;
+    width: 685px;
     height: 350px;
 }
 
@@ -36,7 +40,7 @@
     display: flex;
     gap: 30px;
     justify-content: flex-start;
-    width: 796px;
+    width: 685px;
 }
 
 .photo1{
@@ -59,7 +63,7 @@
 }
 
 .background{
-    width: 796px;
+    width: 685px;
     height: 580px;
     border-radius: 30px;
     border: none;
@@ -94,7 +98,7 @@
 .education_chapter1{
     display: flex;
     flex-direction: column;
-    width: 518px;
+    width: 446px;
     background-color: var(--primary-blue);
     gap: 0px;
     border-radius: 30px;
@@ -129,11 +133,11 @@
 .education_chapter2{
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 8px;
 }
 
 .theme2{
-    width: 524px;
+    width: 446px;
     height: 268px;
     background-color: var(--primary-text-light);
     box-sizing: border-box;
@@ -204,7 +208,11 @@
 
     .education_chapter1 img{
         border-radius: 25px 25px 0px 0px;
-        height: 320px;
+        height: 200px;
+    }
+    
+    .education_chapter2{
+        gap: 5px;
     }
 
     .theme1{
@@ -270,9 +278,6 @@
         width: 370px; 
         height: 430px;
     }
-
-
-
     .education{
         justify-content: start;
         flex-direction: column;
@@ -293,7 +298,11 @@
 
     .education_chapter1 img{
         border-radius: 20px 20px 0px 0px;
-        height: 177px;
+        height: 150px;
+    }
+
+    .education_chapter2{
+        gap: 5px;
     }
 
     .theme1{
@@ -370,9 +379,6 @@
         height: 255px;
     }
 
-
-
-    
     .education{
         justify-content: center;
         flex-direction: column;
