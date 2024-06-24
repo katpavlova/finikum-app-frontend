@@ -3,6 +3,7 @@
 import { Button } from '@/components/Button/Button';
 import styles from './HomePage.module.css';
 import cn from 'classnames';
+import Link from 'next/link';
 
 
 
@@ -16,7 +17,9 @@ export default function HomePage() {
 					Наше будущее за финансовой грамотностью
     
 				</span>
-				<Button appearance='primary_white'>Подробнее о РЦФГ РО</Button>
+				<Link href='/about'>
+					<Button appearance='primary_white'>Подробнее о РЦФГ РО</Button>
+				</Link>
 			</div>
 		</div>
 	</>;

@@ -1,0 +1,28 @@
+.backButton{
+    display: flex;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border: 1px solid #1E50FE;
+    border-radius: 10px;
+    justify-content: center;
+
+    color: var(--primary-text-dark);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 130%;
+    letter-spacing: 0%;
+    text-align: left;
+
+}
+.backButton img{
+    margin: auto;
+}
+.blackButton_wrapper{
+    display: flex ;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    flex-direction: row;
+    width: 100px;
+}

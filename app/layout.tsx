@@ -3,6 +3,7 @@ import { Manrope } from "next/font/google";
 import { Unbounded } from "next/font/google";
 import "../styles/global.css";
 import cn from 'classnames';
+import { LessonProvider } from "@/components/LessonContext";
 
 
 
@@ -28,7 +29,6 @@ export default function RootLayout({
 	return (
 		<html lang="ru">
 			<body className={cn(manrope.className)}>
-				
 				{children}
 			</body>
 		</html>

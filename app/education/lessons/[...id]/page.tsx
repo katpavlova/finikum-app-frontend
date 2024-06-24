@@ -9,6 +9,7 @@ import SideBarList from '@/components/SideBar/SideBarList';
 import settings from '@/public/settings/settings.json';
 import { useEffect, useState } from 'react';
 import LessonsBarList from '@/components/SideBar/LessonsBar';
+import { LessonProvider } from '@/contexts/LessonContext';
 
 interface LessonsProps{
 	params: {
@@ -46,14 +47,16 @@ export default function Lessons({params}: LessonsProps) {
 	return <>
 		<Header/>
 		<NameSection title = {pageTitle}/>
-		<div className={cn('container', styles.LessonsList)}>
-			<SideBarList 
-				titles={Object.keys(lessonsSettings)} 
-				setCurrentGroup={setCurrentGroup} 
-				activeGroup={currentGroup} 
-			/>
-			<LessonsBarList titles={lessonsForGroup} paramsId={params.id}/>
-		</div>
+		<LessonProvider>
+			<div className={cn('container', styles.LessonsList)}>
+				<SideBarList 
+					titles={Object.keys(lessonsSettings)} 
+					setCurrentGroup={setCurrentGroup} 
+					activeGroup={currentGroup} 
+				/>
+				<LessonsBarList titles={lessonsForGroup} paramsId={params.id}/>
+			</div>
+		</LessonProvider>
 		<Footer/>
 	</>;
 }

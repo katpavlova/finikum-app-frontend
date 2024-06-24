@@ -1,0 +1,27 @@
+
+
+.info{
+    margin-top: 120px;
+    display: flex;
+    height: 400px;
+    background-color: var(--primary-blue);
+    box-sizing: border-box;
+    padding: 50px 50px;
+    justify-content: center;
+    
+    flex-direction: column;
+    gap:36px;
+    border-radius: 30px;
+
+    color: #ffffff;
+    font-size: 48px;
+    font-weight: 500;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+}
+
+.info_a{
+    display: block;
+    margin: 0px auto;
+}

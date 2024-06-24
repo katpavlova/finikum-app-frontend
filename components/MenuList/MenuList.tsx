@@ -11,12 +11,12 @@ export const MenuList = (): JSX.Element => {
 	return (<>
 		<div className={cn('container')}>
 			<div className={cn(styles.MenuList)}>
-				<MenuItem imgname="book">Учебные материалы</MenuItem>
-				<MenuItem imgname="phone">Цифровые финансовые услуги</MenuItem>
-				<MenuItem imgname="star">Мероприятия</MenuItem>
-				<MenuItem imgname="fox">Играем и обучаемся</MenuItem>
-				<MenuItem imgname="heart">Волонтерство</MenuItem>
-				<MenuItem imgname="news">Новости</MenuItem>
+				<MenuItem imgname="book" link='/education'>Учебные материалы</MenuItem>
+				<MenuItem imgname="phone" link='/digital_finance'>Цифровые финансовые услуги</MenuItem>
+				<MenuItem imgname="star" link='/events'>Мероприятия</MenuItem>
+				<MenuItem imgname="fox" link='https://fin-kompas.rsue.ru/'>Играем и обучаемся</MenuItem>
+				<MenuItem imgname="heart" link='/about'>Волонтерство</MenuItem>
+				<MenuItem imgname="news" link='/news'>Новости</MenuItem>
 			</div>
 		</div>
 	</>);

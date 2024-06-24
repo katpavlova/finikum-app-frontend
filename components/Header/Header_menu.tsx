@@ -29,11 +29,11 @@ export const HeaderMenu = (): JSX.Element => {
 					</div>
 
 					<div className={styles.header_menu}>
-						<Link href='/education' className={styles.header_menu__link}>О центре</Link>
+						<Link href='/about' className={styles.header_menu__link}>О центре</Link>
 						<Link href='/education' className={styles.header_menu__link}>Учебные материалы</Link>
 						<Image src="/icons/menu.svg" alt="logo" width={24} height={24} onClick={changeMenuState}/>
 
-						<Button appearance="primary">Личный кабинет</Button>
+						<Button appearance="primary"><Link href="/auth">Личный кабинет</Link></Button>
 					</div>
 				</div>
 			</div>

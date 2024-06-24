@@ -8,6 +8,9 @@
     border-radius: 30px;
     border: none;
 }
+.a{
+    color: #fff;
+}
 
 .MenuItem_img {
     /* width: 240px;
@@ -24,6 +27,9 @@
     overflow: hidden;
     border-radius: 30px;
     border: none;
+}
+.MenuItem_light .a{
+    color: var(--primary-text-dark);
 }
 .text_dark{
         color: var(--primary-text-dark);

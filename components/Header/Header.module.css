@@ -46,6 +46,9 @@
     align-items: center;
     
 }
+.a{
+    color: #fff;
+}
 
 .header_logo__text{
     display: flex;
